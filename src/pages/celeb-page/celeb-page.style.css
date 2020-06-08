@@ -1,0 +1,75 @@
+.celeb-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.celeb-image {
+  width: 100%;
+  height: 450px;
+}
+
+.celeb-img {
+  width: 80%;
+  height: 100%;
+  margin-top: 1.5rem;
+  margin-right: 3rem;
+  outline: 1px solid lightgrey;
+  outline-offset: -4px;
+}
+
+.para1 {
+  width: 50%;
+  transform: translateY(-20rem);
+}
+
+.para2 {
+  width: 25%;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+}
+
+.underline {
+  width: 70%;
+}
+
+.btn-home {
+  margin-top: 8rem;
+  width: 100%;
+  padding: 0.2rem 10rem;
+}
+
+.lips-home {
+  width: 12%;
+}
+
+@media only screen and (max-width: 600px) {
+  .celeb-page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .para1 {
+    transform: translateY(3rem);
+  }
+  .para2 {
+    position: relative;
+    width: 50%;
+    margin-right: 2.5rem;
+  }
+  .btn-home {
+    padding: 0.1rem 5rem;
+  }
+  .celeb-img {
+    margin: 0 auto;
+  }
+}
